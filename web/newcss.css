@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+#container {
+    padding:10px;
+    position: absolute;
+    top: 80px;
+    right:300px;
+    left:200px;
+    bottom: 80px;
+    width: 60%;
+    height: 70%;
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+#EmployesC {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+.employee-Heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.employee-Heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+employee-Heading span{
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+}
+
+.employee-box-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.emlployee-box {
+    width:600px;
+    box-shadow: 2px 2px 30px black;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    
+}
+    
+.profile-img {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right:10px;
+}   
+
+.profile-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-employee {
+    display: flex;
+}
+
+.name-employee strong{
+    color: black;
+    font-size:1.1rem;
+    letter-spacing:0.5px;
+    
+}
+
+name-employee span{
+    color: black;
+    font-size: 0.6rem;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+     
+}
+
+.profile {
+    display: flex;
+    align-items:center;
+}
+.Coments p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.employee-box-container:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.4s;
+}
+@media(max-width:1060px){
+    .employee-box-container{
+        width:45%;
+        padding:10px;
+    }
+}
+
+
+.container h1{
+    text-align:center;
+}
+
+.cards img {
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+

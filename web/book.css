@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+}
+.contain{
+    width: 88%;
+    margin: 0 auto;
+}
+.book{
+    box-shadow: 0px 5px 13px -3px rgba(0,0,0,0.75);
+    display: flex;
+    flex-wrap: wrap;
+}
+.description .form{
+    width: 40%;
+    padding: 5%;
+}
+.description h1{
+    text-transform: uppercase;
+    color: #808080;
+    font-weight: 400;
+    margin-top: 0;
+}
+.description p{
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+}
+.description ul{
+    padding-left: 16px;
+    list-style: circle;
+}
+.description ul li{
+    margin: 10px 0;
+}
+.description {
+    margin-left: 10%;
+}
+.form{
+    background: oldlace;
+}
+.form form{
+    color: #808080;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inpbox full{
+    width: 100%;
+    background: white;
+    padding-left: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inpbox i::before{
+    margin-left: 0;
+}
+.inpbox i{
+    padding-right: 10px;
+    border-right: 2px solid black;
+}
+.form section{
+    border: 0;
+    width: 74%;
+    color: #000000;
+    padding: 0 4%;
+}
+.form select:focus, .form input:focus{
+    outline: none;
+}
+.inpbox{
+    width: 33%;
+    background: white;
+    padding: 3%;
+    margin-top: 2%; 
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+.inrbox{
+    width: 33%;
+    color: #000000;
+}
+.inrbox i{
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.inrbox input{
+    width: 15px;
+}
+.subtn, .rst{
+    padding: 2% 5%;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+}
+.subtn{
+    margin-right: 3%;
+    background: white;
+}
+.rst{
+    background: #000000;
+    color: #ffffff;
+}
